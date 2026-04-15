@@ -29,7 +29,7 @@ ggplot(df, aes(x=Cause_of_accident)) +
   theme(axis.text.x = element_text(angle=90))
 
 
-url <- "https://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=ea67eec1c4b9dc4200ed0265938ee5d6"
+url <- "https://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=API_KEY"
 res <- GET(url)
 data <- fromJSON(rawToChar(res$content))
 temp <- data$main$temp
